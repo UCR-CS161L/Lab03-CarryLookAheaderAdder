@@ -25,31 +25,8 @@ module carry_look_ahead_adder # ( parameter NUMBITS = 16 ) (
   output reg carryout
 );
 
-  wire [NUMBITS-1:0] p;
-  wire [NUMBITS-1:0] g;
-  wire [NUMBITS:0] c;
-  wire [NUMBITS-1:0] result_w;
-
-  carry_look_ahead_logic # (.NUMBITS(NUMBITS)) cla_logic (
-    .p(p),
-    .g(g),
-    .c_in(carryin),
-    .c(c)
-  );
-
-  assign c[0] = carryin;
-
-  always @(*) begin
-    carryout <= c[NUMBITS];
-    result <= result_w;
-  end
-
-  genvar i;
-
-  generate
-    for (i = 0; i < NUMBITS; i = i+ 1) begin
-      spg_block stage(.a(A[i]), .b(B[i]), .c_in(c[i]), .g(g[i]), .p(p[i]), .s(result_w[i]));
-    end
-  endgenerate
+    // ------------------------------
+    // Insert your solution below
+    // ------------------------------ 
 
 endmodule
