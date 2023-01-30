@@ -37,13 +37,13 @@ $P_i = A_i \oplus B_i$ or $P_i = A_i + B_i$
 
 For a 4-bit adder all the carries can therefore be calculated with the following formulas:
 
-$C_0 = G_0 + P_0 \cdot C_0$
+$C_1 = G_0 + P_0 \cdot C_0$
 
-$C_1 = G_1 + P_1 \cdot C_1$
+$C_2 = G_1 + P_1 \cdot C_1$
 
-$C_2 = G_2 + P_2 \cdot C_2$
+$C_3 = G_2 + P_2 \cdot C_2$
 
-$C_3 = G_3 + P_3 \cdot C_3$
+$C_4 = G_3 + P_3 \cdot C_3$
 
 If we substitute $C_0$ in to $C_1$ then subsitute that in to $C_2$, and so on, we get that each carrie is:
 
