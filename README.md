@@ -1,4 +1,4 @@
-# Lab 3 - Carry Look Ahead Adder 
+# Lab 5 - Carry Look Ahead Adder 
 
 ## Introduction
 
